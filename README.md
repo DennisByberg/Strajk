@@ -1,9 +1,9 @@
 # User Story och Acceptanskriterier
 
 ### Som användare vill jag kunna boka datum och tid samt ange antal spelare så att jag kan reservera 1 eller flera baner i bowlinghallen.
-´´´
+´
 - test test
-´´´
+´
 
 Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 
