@@ -19,3 +19,6 @@
 > - *Det ska gå att få tillbaks ett reservationsnummer.*
 > - *Det ska gå att se ett total nummer.*
 ---
+> #### Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
+> - *Coming Soon...*
+---
