@@ -15,4 +15,7 @@
 > - *Det ska gå att trycka på "-" och ta bort ett fält.*
 ---
 > #### Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett ett bokningsnummer och totalsumma så jag vet hur mycket jag ska betala. (120 kr / person + 100 kr / bana).
+> - *Det ska gå att se en bekräftelsesida.*
+> - *Det ska gå att få tillbaks ett reservationsnummer.*
+> - *Det ska gå att se ett total nummer.*
 ---
