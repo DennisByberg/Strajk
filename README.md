@@ -13,3 +13,6 @@
 ---
 > #### Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
 > - *Det ska gå att trycka på "-" och ta bort ett fält.*
+---
+> #### Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett ett bokningsnummer och totalsumma så jag vet hur mycket jag ska betala. (120 kr / person + 100 kr / bana).
+---
