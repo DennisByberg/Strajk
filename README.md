@@ -29,7 +29,7 @@
 > - *Det ska gå att få tillbaks ett reservationsnummer när en reservation är lagd.*
 > - *Det ska gå att se ett total nummer när en reservation är lagd.*
 
-> - *Det ska visas "inga bokning gjord!" om man råkar gå tillbaks till förstasidan och sen tillbaks till confirmation igen.* ( VG )
+> - *Det ska visas "inga bokning gjord!" om man råkar gå tillbaks till förstasidan och sen tillbaks till confirmation igen efter man lagt en reservation.* ( VG )
 ---
 
 ### NAVIGATION
