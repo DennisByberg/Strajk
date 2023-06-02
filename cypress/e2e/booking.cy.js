@@ -39,6 +39,68 @@ describe("Booking", () => {
     cy.get(".input__field").eq(3).type("1").should("have.value", "1");
   });
 
+  ////// ERROR-HANDLING //////
+  it("Should display an error message if all fields are not filled correctly", () => {
+    // Trycker på STRIKE utan att ha fyllt i något fält...
+    cy.get(".button.booking__button").click();
+    cy.get(".error-message").should("be.visible");
+
+    // datum...
+    cy.get(".input__field").first().type("2022-03-12");
+
+    // Trycker på STRIKE efter att ha fyllt i datum...
+    cy.get(".button.booking__button").click();
+    cy.get(".error-message").should("be.visible");
+
+    // tid...
+    cy.get(".input__field").eq(1).type("18:00");
+
+    // Trycker på STRIKE efter att ha fyllt i datum och tid...
+    cy.get(".button.booking__button").click();
+    cy.get(".error-message").should("be.visible");
+
+    // antal bowlare...
+    cy.get(".input__field").eq(2).type("2");
+
+    // Trycker på STRIKE efter att ha fyllt i datum, tid och antal bowlare...
+    cy.get(".button.booking__button").click();
+    cy.get(".error-message").should("be.visible");
+
+    // antal banor...
+    cy.get(".input__field").eq(3).type("1");
+
+    // Trycker på STRIKE efter att ha fyllt i datum, tid, antal bowlare och antal banor...
+    cy.get(".button.booking__button").click();
+    cy.get(".error-message").should("be.visible");
+
+    // ett par skor...
+    cy.get(".shoes__button").click();
+    cy.get(".input__field.shoes__input").type("42");
+
+    // Trycker på STRIKE efter att ha fyllt i datum, tid, antal bowlare, antal banor och ett par skor...
+    cy.get(".button.booking__button").click();
+    cy.get(".error-message").should("be.visible");
+
+    // andra paret skor...
+    cy.get(".shoes__button").eq(1).click();
+    cy.get(".input__field.shoes__input").eq(1).type("45");
+
+    // Trycker på STRIKE efter att ha fyllt i allt korrekt...
+    cy.get(".button.booking__button").click();
+    // Nu ska allt funka...
+    cy.get(".confirmation").should("be.visible");
+  });
+
+  it("Should only be possible to enter a number in the number of bowlers field.", () => {
+    // Matar in antal bowlare med en bokstav och kollar så att det inte funkade...
+    cy.get(".input__field").eq(2).type("X").should("have.value", "");
+  });
+
+  it("Should only be possible to enter a number in the number of lanes field.", () => {
+    // Matar in antal banor med en bokstav och kollar så att det inte funkade...
+    cy.get(".input__field").eq(3).type("X").should("have.value", "");
+  });
+
   /*/ //-----------------------------------------|
   As a user, I want to be able to choose the shoe size for each player so that each player gets shoes that fit.
   */ //------------------------------------------|
@@ -67,9 +129,40 @@ describe("Booking", () => {
       .should("have.value", "45");
   });
 
+  ////// ERROR-HANDLING //////
+  it("Should only be possible to enter a number in the shoe-size field.", () => {
+    // Trycker på "+"...
+    cy.get(".shoes__button").click();
+    // Matar in en bokstav och kollar så att det inte fungerade...
+    cy.get(".input__field.shoes__input").type("X").should("have.value", "");
+  });
+
+  it("Should display an error message if the number does not match the number of bowlers.", () => {
+    cy.visit("http://localhost:5173/");
+
+    // Matar in en reservation med ett par skor för lite...
+    cy.get(".input__field").first().type("2023-09-14");
+    cy.get(".input__field").eq(1).type("20:00");
+    cy.get(".input__field").eq(2).type("2").should("have.value", "2");
+    cy.get(".input__field").eq(3).type("1").should("have.value", "1");
+    cy.get(".shoes__button").first().click();
+    cy.get(".input__field.shoes__input").type("43");
+    cy.get(".button.booking__button").click();
+
+    // Kollar så att error meddelandet visas...
+    cy.get(".error-message").should("be.visible");
+  });
+
   /*/ //-----------------------------------------|
   // As a user, I want to be able to remove a shoe size field if I happened to click one too many so I don't book shoes unnecessarily.
   */ //------------------------------------------|
+  it("Should display a minus icon when i press add shoes.", () => {
+    // Trycker på "+"...
+    cy.get(".shoes__button").first().click();
+    // Kontrollerar så att en minus ikon är synlig...
+    cy.get(".shoes__button.shoes__button--small").should("be.visible");
+  });
+
   it("Should be possible to remove a pair of shoes", () => {
     // Trycker på "+" två gånger...
     cy.get(".shoes__button").first().click();
