@@ -8,6 +8,7 @@
 > - *Det ska gå att mata in antal banor.*
 
 > - *Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda.* ( VG )
+> - *Det ska endast gå att skriva in siffror i antal bowlare och banor fälten.* ( VG )
 ---
 > #### Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 > - *Det ska gå att lägga till ett par skor i din storlek.*
