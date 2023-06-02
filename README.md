@@ -7,6 +7,7 @@
 > - *Det ska gå att mata in antal bowlare.*
 > - *Det ska gå att mata in antal banor.*
 
+> - *Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda.* ( VG )
 > - *Det ska endast gå att skriva in en siffra i antal bowlare fältet.* ( VG )
 > - *Det ska endast gå att skriva in en siffra i antal banor fältet.* ( VG )
 ---
@@ -25,8 +26,6 @@
 > - *Det ska gå att se en bekräftelsesida.*
 > - *Det ska gå att få tillbaks ett reservationsnummer.*
 > - *Det ska gå att se ett total nummer.*
-
-> - *Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda.* ( VG )
 ---
 
 ### NAVIGATION
