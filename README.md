@@ -7,7 +7,8 @@
 > - *Det ska gå att mata in antal bowlare.*
 > - *Det ska gå att mata in antal banor.*
 
-> - *Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda"*
+# ERROR
+> - *Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda*
 ---
 > #### Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 > - *Det ska gå att lägga till ett par skor i din storlek.*
