@@ -26,6 +26,6 @@
 
 ### NAVIGATION
 > #### Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
-> - *Det ska gå att navigera mellan hemvyn och bekräftelsevyn.*
 > - *Nav-ikonen ska visas korrekt på sidan.*
+> - *Det ska gå att navigera mellan hemvyn och bekräftelsevyn.*
 ---
