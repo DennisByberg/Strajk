@@ -19,6 +19,7 @@
 > - *Det ska visas ett felmeddelande om antal skor inte stämmer överens med antal bowlare.* ( VG )
 ---
 > #### Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
+> - *När jag tryckt på + ska en minus-ikon visas.*
 > - *Det ska gå att trycka på "-" och ta bort ett fält.*
 ---
 
