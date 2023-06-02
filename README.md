@@ -7,7 +7,7 @@
 > - *Det ska gå att mata in antal bowlare.*
 > - *Det ska gå att mata in antal banor.*
 
-> - *( VG ) Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda*
+> - *( VG ) Det ska visas ett felmeddelande om alla fält inte är korrekt ifyllda.*
 ---
 > #### Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 > - *Det ska gå att lägga till ett par skor i din storlek.*
@@ -26,5 +26,6 @@
 
 ### NAVIGATION
 > #### Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
-> - *Det ska gå att navigera mellan hemvyn och bekräftelsevyn*
+> - *Det ska gå att navigera mellan hemvyn och bekräftelsevyn.*
+> - *nav-ikonen ska visas korrekt på sidan.*
 ---
